@@ -1,4 +1,6 @@
-import { Item, GildedRose } from '../app/gilded-rose';
+import { GildedRose } from "../src/gilded-rose";
+import { Item } from "../src/models/item";
+
 
 console.log("OMGHAI!")
 
@@ -19,8 +21,8 @@ const gildedRose = new GildedRose(items);
 
 let days: number = 2;
 if (process.argv.length > 2) {
-    days = +process.argv[2];
-  }
+  days = +process.argv[2];
+}
 
 for (let i = 0; i < days + 1; i++) {
   console.log("-------- day " + i + " --------");
