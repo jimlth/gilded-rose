@@ -2,6 +2,10 @@
 
 This is the Gilded Rose kata in TypeScript.
 
+I chose to refactor it through the use of a factory where each item type is handled by its own dedicated service.
+
+I used a functional approach, favoring keywords like `const` over `let`, early return statements instead of `else`, avoiding mutations so the code is predictable and side-effect free (even though the `items` property is still mutated as it is part of the requirements), and so on.
+
 ## Getting started
 
 Install dependencies
@@ -12,22 +16,10 @@ npm install
 
 ## Run the unit tests from the Command-Line
 
-There are two unit test frameworks to choose from, Jest and Mocha.
+I chose to run tests with vitest
 
 ```sh
-npm run test:jest
-```
-
-To run all tests in watch mode
-
-```sh
-npm run test:jest:watch
-```
-
-Mocha
-
-```sh
-npm run test:mocha
+npm run test:vitest
 ```
 
 
